@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="CardGaem/CardGaem.csproj" />
+  <Project Path="CardGaemTests/CardGaemTests.csproj" Id="41d67b6e-50b0-4246-aab0-f530994e3b30" />
+  <Project Path="Controller/Controller.csproj" />
+  <Project Path="ControllerTests/ControllerTests.csproj" Id="b3dd63dd-ea7d-4536-8528-e2aeb9497290" />
+  <Project Path="View/View.csproj" />
+</Solution>

@@ -1,0 +1,74 @@
+<Window x:Class="View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:View"
+        mc:Ignorable="d"
+        Title="Test" Height="450" Width="800">
+    <Grid x:Name="Grid">
+        <Grid x:Name="gridReaches" Margin="150,10,150,360" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="5"/>
+                <RowDefinition Height="5"/>
+            </Grid.RowDefinitions>
+            <Grid x:Name="p1ReachView" MinHeight="5" >
+            </Grid>
+            <Grid x:Name="p2ReachView" Grid.Row="1" Grid.Column="4" MinHeight="5"></Grid>
+        </Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="15*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Button Grid.Row="1" Grid.Column="1" Click="OnNextTurn">Tour suivant</Button>
+
+        </Grid>
+        <Grid x:Name="gridBoard" Margin="150,25,150,100" Background="LightGray" ShowGridLines="True">
+            
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+        </Grid>
+        <Grid >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid x:Name="p1Cards">
+                <Label x:Name="p1Label" MinHeight="50"></Label>
+            </Grid>
+            <Grid x:Name="p2Cards" MinHeight="50" Grid.Column="2">
+                <Label x:Name="p2Label"></Label>
+            </Grid>
+        </Grid>
+
+        <!--<Button x:Name="AtkBaseP1" Margin="71,95,655,161" Content="🢀" FontSize="20" Background="White" BorderBrush="White"/>
+        <Button x:Name="AtkBaseP2" Margin="655,95,71,161" Content="🢂" FontSize="20" Background="White" BorderBrush="White"/> -->
+    </Grid>
+</Window>
